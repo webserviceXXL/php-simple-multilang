@@ -4,7 +4,7 @@ class Lang {
   protected $locale;
   protected $strings;
 
-  public function __construct($l = "de-DE") {
+  public function __construct($l = "en-US") {
     $this->locale = $l;
     $tmp = explode("-", $l);
     $lang = $tmp[0];

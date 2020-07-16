@@ -1,0 +1,13 @@
+{
+  "general": {
+    "text1": "Lorem ipsum...",
+    "text2": "dolor sit amet"
+    "group1": {
+      "text1": "Was auch immer..."
+    }
+  },
+  "more": {
+    "another": "Testen 123"
+  },
+  "and_one_more": "Fertig"
+}

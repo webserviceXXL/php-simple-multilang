@@ -24,20 +24,20 @@ class Lang {
           if(array_key_exists($s[$i], $this->strings)) {
             $el = $this->strings[$s[$i]];
           } else {
-            $el = "$selector not found for locale $this->locale";
+            $el = $selector." not found for locale ".$this->locale;
             break;
           }
         } else {
           if(array_key_exists($s[$i], $el)) {
             $el = $el[$s[$i]];
           } else {
-            $el = "$selector not found for locale $this->locale";
+            $el = $selector." not found for locale ".$this->locale;
             break;
           }
         }
       }
     } catch (\Throwable $th) {
-      $el = "$selector not found for locale $this->locale";
+      $el = $selector." not found for locale ".$this->locale;
     }
     return $el;
   }
